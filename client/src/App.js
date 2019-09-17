@@ -20,6 +20,7 @@ const App = () => {
         render={props => <MovieList list={savedList} {...props} />}
       />
       <Route
+        exact
         path="/movies/:id"
         render={props => <Movie list={savedList} {...props} />}
       />
